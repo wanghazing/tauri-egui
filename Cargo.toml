@@ -14,7 +14,7 @@ tauri = "1.5"
 tauri-runtime = "0.13"
 tauri-runtime-wry = "0.13"
 egui = "0.21"
-eframe = { package = "eframe_tao", version = "0.21.3" }
+eframe = { package = "eframe_tao", version = "0.21" }
 egui-winit = { package = "egui-tao", version = "0.22.0" }
 egui_glow = { package = "egui_glow_tao", version = "0.22.0" }
 glutin = { package = "glutin_tao", version = "0.32.0" }
