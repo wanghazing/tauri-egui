@@ -1,6 +1,6 @@
 [package]
 name = "tauri-egui"
-version = "0.1.1"
+version = "0.3.0"
 edition = "2021"
 license = "Apache-2.0 OR MIT"
 readme = "README.md"
@@ -10,24 +10,24 @@ description = "A Tauri plugin for the egui library"
 
 [dependencies]
 thiserror = "1"
-tauri = "1.2"
-tauri-runtime = "0.14"
-tauri-runtime-wry = "0.14"
+tauri = "=2.0.0-beta"
+tauri-runtime = "=2.0.0-beta"
+tauri-runtime-wry = "=2.0.0-beta"
 egui = "0.19"
-eframe = { package = "eframe_tao", version = "0.20.1" }
-egui-winit = { package = "egui-tao", version = "0.20.1" }
-egui_glow = { package = "egui_glow_tao", version = "0.20.1" }
-glutin = { package = "glutin_tao", version = "0.30.1" }
+eframe = { package = "eframe_tao", version = "0.22.0" }
+egui-winit = { package = "egui-tao", version = "0.22.0" }
+egui_glow = { package = "egui_glow_tao", version = "0.22.0" }
+glutin = { package = "glutin_tao", version = "0.32.0" }
 glow = "0.11"
 rand = "0.8"
 raw-window-handle = "0.5"
 
 [dev-dependencies]
-tauri = { version = "1.2", features = [ "dialog-message" ] }
+tauri = { version = "=2.0.0-alpha.4" }
 egui_demo_app = { path = "examples/egui_demo_app" }
 
 [target."cfg(any(target_os = \"linux\", target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"openbsd\", target_os = \"netbsd\"))".dependencies]
-gtk = { version = "0.15", features = [ "v3_20" ] }
+gtk = { version = "0.16", features = [ "v3_24" ] }
 
 [[example]]
 name = "demo"
