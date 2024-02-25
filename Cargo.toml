@@ -27,7 +27,7 @@ tauri = { version = "=2.0.0-alpha.20" }
 egui_demo_app = { path = "examples/egui_demo_app" }
 
 [target."cfg(any(target_os = \"linux\", target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"openbsd\", target_os = \"netbsd\"))".dependencies]
-gtk = { version = "0.18", features = [ "v3_24" ] }
+gtk = { version = "0.16", features = [ "v3_24" ] }
 
 [[example]]
 name = "demo"
